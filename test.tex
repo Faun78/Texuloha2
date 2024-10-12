@@ -9,13 +9,13 @@
 \maketitle
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vesti-
-bulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida futrum
-\hskip 5pt plus 3pt minus 2pt % Mezera a, pokud nedojde ke zlomu
-\penalty0 % Umožňuje zlomení
-\hskip 5pt plus 5pt minus 3pt % Mezera b, pokud dojde k zlomu
-\hbox{} % Prázdný hbox pro kontrolu vertikálního zlomu
-\penalty10000 % Zajištění zlomu
-\hskip 10pt plus 6pt minus 4pt % Mezera c po zlomě
+bulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mau
+\hskip 10pt plus 6pt minus 20pt % Mezera a, pokud nedojde ke zlomu
+\nobreak % Umožňuje zlomení
+\phantom{\hskip 10pt plus 6pt minus 5pt} % Mezera b
+\break % Zajištění zlomu
+\hbox{}
+\hskip 5pt plus 6pt minus 20pt % Mezera c po zlomě
 Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
 
 \end{document}
